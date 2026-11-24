@@ -15,21 +15,21 @@ public class JavaApplication46 {
      */
     public static void main(String[] args) {
        LabGradeRecord2 ana = new LabGradeRecord2("Ana", 80, 90);
-        System.out.println(ana.getFinalGrade() + "; " + (ana.isPassing() ? "passing" : "not passing"));
+        System.out.println(ana.getFinalGrade() + "; " + (ana.isPassing() ? "passing" : "out of passing"));
 
         LabGradeRecord2 ben = new LabGradeRecord2("Ben", 101, 85);
-        System.out.println(ben.getFinalGrade() + "; " + (ben.isPassing() ? "passing" : "not passing"));
+        System.out.println(ben.getFinalGrade() + "; " + (ben.isPassing() ? "passing" : "out of passing"));
 
         boolean step3 = ana.updateScores(95, 101);
         System.out.println(step3 + "; grade stays " + ana.getFinalGrade());
 
         boolean step4 = ana.updateScores(74, 75);
-        System.out.println(step4 + "; " + ana.getFinalGrade() + "; " + (ana.isPassing() ? "passing" : "not passing"));
+        System.out.println(step4 + "; " + ana.getFinalGrade() + "; " + (ana.isPassing() ? "passing" : "out of passing"));
 
         boolean step5 = ana.updateScores(75, 75);
-        System.out.println(step5 + "; " + ana.getFinalGrade() + "; " + (ana.isPassing() ? "passing" : "not passing"));
+        System.out.println(step5 + "; " + ana.getFinalGrade() + "; " + (ana.isPassing() ? "passing" : "out of passing"));
 
-        System.out.println("Still " + ben.getFinalGrade() + "; " + (ben.isPassing() ? "passing" : "not passing"));
+        System.out.println("Still " + ben.getFinalGrade() + "; " + (ben.isPassing() ? "passing" : "out of passing"));
     }
 }
 
